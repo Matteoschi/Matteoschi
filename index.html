@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <style>
+    body{
+    background: linear-gradient(to bottom left, #3333ff 4%, #3399ff 99%);
+    width: 100%;
+    height: 100%;
+}
+.conteiner{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 45%;
+    height: 55%;
+    margin-top: 10%;
+    margin-left: 28%;
+}
+.invio{
+    width: 90%;
+    height: 10%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #3333ff 4%, #00ffff 99%);
+    transition: all 300ms ease-out;
+}
+.invio:hover{
+    box-shadow: 5px 5px hwb(0 85% 15%);
+    transition: all 200ms ease-in;
+}
+label{
+    color: rgb(20, 88, 165);
+    margin-left: 5%;
+    font-size: large;
+}
+.input{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    color: blue;
+    margin-left: 5%;
+    transition: all 500ms ease-out;
+}
+.input:hover{
+    transition: all 100ms ease-in;
+    border-radius: 10px;
 
-<h1>Machine learning</h1>
-
-<form action="https://formsubmit.co/ba4a34d07d75067b6de506eea2bc012a " method="POST">
-  <label for="Nome">Nome:</label>
-  <input type="text" id="Nome" name="Nome"><br><br>
-  <label for="Anni">Anni:</label>
-  <input type="number" id="Anni" name="Anni"><br><br>
-  <label for="Genere">Genere:</label>
-  <input type="text" id="Genere" name="Genere"><br><br>
-  <label for="Tipologia">Tipologia</label>
-  <input type="Tipologia" id="Tipologia" name="Tipologia"><br><br>
-  <input type="submit" value="Submit">
-</form>
+}
+.title{
+    margin-left: 10%;
+}
+#macchina{
+    margin-left: 50%;
+    margin-top: -27.7%;
+    float: left;
+}
+  </style>
+  <body>
+    <div class="conteiner" >
+        <h1 class="title">Registration</h1>
+        <form action="https://formsubmit.co/bfe72a05f19e1f64272213f90534dac1" method="POST">
+            <br>
+            <label for="fname">Nome</label><br><br>
+            <input class="input" type="text" id="Nome" name="Nomo"><br><br><br>
+            <label for="lname">Anni</label><br><br>
+            <input class="input" type="number" id="Anni" name="Anni"><br>
+            <label id="macchina" for="macchina">Macchina:</label><br><br>
+            <input class="input" type="text" id="macchina" name="macchina">
+            <input class="invio" class="invio" type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
